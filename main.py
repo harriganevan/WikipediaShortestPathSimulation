@@ -13,8 +13,8 @@ from search import getRoute
 #import function from search.py and use it to return a route after passing start and end page
 
 def main(args):
-    getRoute(args.start, args.end)
-
+    route = getRoute(args.start, args.end)
+    print(route)
 
 
 #use selenium to follow that route
@@ -33,7 +33,7 @@ def main(args):
 # input_element.clear()
 # input_element.send_keys("blahblah" + Keys.ENTER)
 
-# time.sleep(5)
+# time.sleep(5) 
 # driver.quit()
 
 
